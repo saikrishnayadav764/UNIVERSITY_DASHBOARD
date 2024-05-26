@@ -3,7 +3,7 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
 const api = axios.create({
-  baseURL: 'https://university-backend-gu9a.onrender.com/api',
+  baseURL: 'https://university-backend-x31v.onrender.com/api',
 });
 
 api.interceptors.request.use((config) => {
