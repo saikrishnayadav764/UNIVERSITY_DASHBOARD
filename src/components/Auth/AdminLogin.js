@@ -1,8 +1,8 @@
 // AdminLogin.js
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import authService from '../../services/authService';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const AdminLogin = () => {
   const [username, setUsername] = useState('');
@@ -63,7 +63,7 @@ const AdminLogin = () => {
                 </button>
               </form>
               <div className="mt-3 text-center">
-                <a href="/student/login" className="btn btn-link">Student Login</a>
+              <Link to="/student/login">Student Login</Link>
               </div>
             </div>
           </div>
