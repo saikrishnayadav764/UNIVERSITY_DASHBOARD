@@ -52,10 +52,7 @@ export const AuthProvider = ({ children }) => {
     fetchCurrentUser();
     // fetchFields(); 
     fetchSubjects();
-    if(token){
-          fetchCurrentUser();
-
-    }
+    fetchCurrentUser();
 
   }, [token]);
 
