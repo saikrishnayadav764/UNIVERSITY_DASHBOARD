@@ -26,11 +26,11 @@ const ChartsComponent = () => {
         topStudents,
         subjectPassRate
       ] = await Promise.all([
-        axios.get('https://university-backend-gu9a.onrender.com/api/students/average-total-marks'),
-        axios.get('https://university-backend-gu9a.onrender.com/api/students/subjects-highest'),
-        axios.get('https://university-backend-gu9a.onrender.com/api/students/count'),
-        axios.get('https://university-backend-gu9a.onrender.com/api/students/top-students'),
-        axios.get('https://university-backend-gu9a.onrender.com/api/students/passrate')
+        axios.get('https://university-backend-x31v.onrender.com/api/students/average-total-marks'),
+        axios.get('https://university-backend-x31v.onrender.com/api/students/subjects-highest'),
+        axios.get('https://university-backend-x31v.onrender.com/api/students/count'),
+        axios.get('https://university-backend-x31v.onrender.com/api/students/top-students'),
+        axios.get('https://university-backend-x31v.onrender.com/api/students/passrate')
       ]);
 
       console.log('Average Total Marks Data:', averageTotalMarks.data);
