@@ -51,7 +51,10 @@ export const AuthProvider = ({ children }) => {
 
     fetchCurrentUser();
     fetchSubjects();
-    fetchFields(); 
+    if(token){
+      fetchFields(); 
+    }
+    // fetchFields(); 
   }, [token]);
 
   const loginAdmin = async (username, password) => {
